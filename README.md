@@ -10,7 +10,7 @@
 - [Smart Contracts and Hybrid Chains](#smart-contracts-and-hybrid-chains)
     - [Mixed-Use Development](#mixed-use-development)
 - [ink! For Urban Planning](#ink-for-urban-planning)
-    - [Chain-Extensions](#chain-extensions)
+    - [Chain-Extensions and the CallBuilder](#chain-extensions-and-the-callbuilder)
     - [Rust Integration](#rust-integration)
 - [Conclusion](#conclusion)
 
@@ -33,18 +33,17 @@ Without smart contracts app-chains will turn into suburban nightmares.
 
 ## Hybrid Chains
 
-_Rob H. has a good post that delves deeper on the concept of concept of hybrid chains.
-You should go read that in it's entirety when you have a chance._
-    - https://www.rob.tech/blog/hybrid-chains/
+_Rob H. has [a good post](https://www.rob.tech/blog/hybrid-chains/) that delves deeper on
+the concept of concept of hybrid chains. You should go read that in it's entirety when
+you have a chance._
 
 A hybrid chain is one which is mostly specialized, but also retains some limited level of
 general compute abilities. This lets the chain optimize for a certain use case, but also
 maintain a bit of flexibility for new innovation or integrations.
 
 This combination of specialization and flexibility will allow for more efficient use of
-blockspace the raw material produced by blockchains and consumed by decentralized
-applications.
-    - https://www.rob.tech/blog/polkadot-blockspace-over-blockchains/
+[blockspace](https://www.rob.tech/blog/polkadot-blockspace-over-blockchains/) - the raw
+material produced by blockchains and consumed by decentralized applications.
 
 From the ink! side, we've historically referred to hybrid-chains using the concept of
 "smart contracts as second class citizens". The idea that smart contracts may exist on a
@@ -103,9 +102,8 @@ There are three things that make deploying smart contracts scalable:
 1. Default to a dormant state
 
 It is a combination of these three factors that a chain like Ethereum is able to support
-nearly eight million smart contracts deployed on it in just 2022!
-- https://www.alchemy.com/blog/web3-developer-report-q4-2022
-
+nearly [eight million smart contracts](https://www.alchemy.com/blog/web3-developer-report-q4-2022)
+deployed on it in just 2022!
 
 For (1), typically as long as you have enough funds to cover the cost of putting the code
 on-chain nobody can stop you from deploying code. 
@@ -228,17 +226,25 @@ do it.
 In mixed-use neighbourhoods, why is is ink! uniquely suited to thrive? Two main reasons:
 chain-extensions, and native Rust integrations.
 
-### Chain-Extensions
+### Chain-Extensions and the CallBuilder
 
-One nice feature that ink! has is called _chain extensions_. This allows ink! contracts
-to natively tap into the core functionality exposed by the app-chain the ink! contract is
-running on.
+One nice feature that ink! has is called
+[_chain extensions_](https://use.ink/macros-attributes/chain-extension).
 
-There is also the flexible `CallBuidler`, which allows you to not only call other ink!
-contracts but also Solidity contracts compiled using Solang.
+These allow ink! contracts to natively tap into the core functionality exposed by the
+app-chain the ink! contract is running on.
 
-This in combination of chain-extensions with the flexible `CallBuilder` gives contract
-authors a lot of ways to integrate other applications in their own smart contracts.
+For example, if an app-chain exposed some cryptography primitives for zero-knowledge
+computations, an ink! contract would be able to leverage these without much trouble.
+
+There is also the flexible [`CallBuilder`](https://docs.rs/ink_env/latest/ink_env/call/struct.CallBuilder.html)
+API, which allows a contract to not only call other ink! contracts but also Solidity
+contracts compiled to `pallet-contracts`-flavoured WebAssembly using
+[Solang](https://github.com/hyperledger/solang).
+
+This in combination of chain-extensions with the flexible `CallBuilder` API gives ink!
+contract authors a level of integration and composability that isn't possible to achieve
+with other smart contracting languages at the moment.
 
 ### Rust Integration
 
@@ -251,7 +257,8 @@ Substrate features.
 
 For example, the implementation of the SCALE codec used by ink! is the reference
 implementation used by Polkadot and Substrate. From the ink! side there was nothing for
-us to do but import the `parity-scale-codec` crate.
+us to do but import the [`parity-scale-codec`](https://github.com/paritytech/parity-scale-codec)
+crate.
 
 Similarly, when libraries for things like cross-chain messaging get split out from the
 Polkadot and Substrate repositories ink! will be able to use them directly. No need to
