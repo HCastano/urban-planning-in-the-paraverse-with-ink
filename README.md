@@ -14,14 +14,13 @@
     - [Rust Integration](#rust-integration)
 - [Conclusion](#conclusion)
 
-## Intro
+## Introduction
 
 The current trend in the blockchain space is one in which application specific
-blockchains (app-chains) are becoming more and more common. 
+blockchains (app-chains) are becoming more and more common. However, the idea of that
+specialization is the be-all-end-all for the future of blockchain is overblown.
 
-The idea that specilizaton is the be-all-end-all for the future of blockchain is overblown.
-
-We seem to have forgotten that smart contracts will play a crutial role in this app-chain
+We seem to have forgotten that smart contracts will play a crucial role in this app-chain
 world.
 
 Their ease of development, deployment and flexibility creates developer velocity and
@@ -34,24 +33,22 @@ Without smart contracts app-chains will turn into suburban nightmares.
 
 ## Hybrid Chains
 
-Rob H. has a good post on the concept of hybrid chains. You should go read that in it's
-entirety when you have a change. We'll summarize the concept here.
+_Rob H. has a good post that delves deeper on the concept of concept of hybrid chains.
+You should go read that in it's entirety when you have a chance._
     - https://www.rob.tech/blog/hybrid-chains/
 
-A hybrid chain is one which contains both application specific logic, as well as
-smart contracts.
+A hybrid chain is one which is mostly specialized, but also retains some limited level of
+general compute abilities. This lets the chain optimize for a certain use case, but also
+maintain a bit of flexibility for new innovation or integrations.
 
-From the ink! side, we've historically referred to this as the concept of "smart
-contracts as second class citizens". The idea that they exist on a blockchain whose
-_raison d'etre_ isn't to just simply run smart contracts.
+This combination of specialization and flexibility will allow for more efficient use of
+blockspace the raw material produced by blockchains and consumed by decentralized
+applications.
+    - https://www.rob.tech/blog/polkadot-blockspace-over-blockchains/
 
-Rob argues that hybrid chains increase the efficiency of blockspace utilization and
-economic value creation.
-
-Rob doesn't really go into why ink! and smart contracts more generally are well suited,
-so we'll do that here.
-
-TODO: Re-read article and summarize properly
+From the ink! side, we've historically referred to hybrid-chains using the concept of
+"smart contracts as second class citizens". The idea that smart contracts may exist on a
+blockchain whose _raison d'etre_ is not to just simply run smart contracts.
 
 ## Smart Contract Advantages
 
@@ -242,7 +239,6 @@ contracts but also Solidity contracts compiled using Solang.
 
 This in combination of chain-extensions with the flexible `CallBuilder` gives contract
 authors a lot of ways to integrate other applications in their own smart contracts.
-
 
 ### Rust Integration
 
