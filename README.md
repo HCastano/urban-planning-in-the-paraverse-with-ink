@@ -1,34 +1,18 @@
 # Urban Planning in the Paraverse with ink!
 
-## Outline
-- What is the multi-chain thesis
-- What does the multi-chain future look like?
-    - Hybrid chains
-- Why might you still want to use smart contracts (smart contract advantaged)?
-    - Sandboxed execution
-    - Lower deployment costs
-    - Easy bootstrapping
-        - Collators, community, blockspace aquisition
-- What role do smart contracts play in this world?
-    - Experimentation
-    - API dogfooding
-    - More efficient use of blockspace? How?
-        - Density, localized economic activity
-        - Housing analogy, residential, suburbs, embedded
-        - Should tie into Polkadot here
-            - Automatically get access to a whole community of chains
-                - Not just app-specific chains, but their contracts
-- Why is ink! uniquely suited to thrive in this environment?
-    - Should specify: Substrate + Polkadot based world
-    - Native Rust tooling available
-    - Chain extensions
-
-
-- What are some things we still need to achieve this?
-    - A pathway for solo-SC chains ("pure ink! chains")
-        - Smart contracts as AWS Lambdas?
-    - A pathway from contract to runtime
-    - Native XCM integration
+## Table of Contents
+- [Introduction](#introduction)
+- [Hybrid Chains](#hybrid-chains)
+- [Smart Contract Advantages](#smart-contract-advantages)
+    - [Ease of Development](#ease-of-development)
+    - [Scalable Deployments](#scalable-deployments)
+    - [Simple Maintenance](#simple-maintenance)
+- [Smart Contracts and Hybrid Chains](#smart-contracts-and-hybrid-chains)
+    - [Mixed-Use Development](#mixed-use-development)
+- [ink! For Urban Planning](#ink-for-urban-planning)
+    - [Chain-Extensions](#chain-extensions)
+    - [Rust Integration](#rust-integration)
+- [Conclusion](#conclusion)
 
 ## Intro
 
@@ -157,7 +141,7 @@ token game theoretics, exchange listings, regulatory compliance, etc.
 This sounds like quite a bit of work, when all you really wanted to do was deploy an
 application and gets users playing with it, no?
 
-## Smart Contracts in Hybrid Chains
+## Smart Contracts and Hybrid Chains
 
 Now that we understand some of the fundamental advantages of smart contracts, how can we
 leverage these in the context of hybrid chains?
@@ -242,7 +226,7 @@ you get access to all the other neighbourhoods in the paraverse out of the box t
 XCM! Sure, running this errands wil take a bit more time and cost a bit more, but you can
 do it.
 
-## Why ink! ?
+## ink! for Urban Planning
 
 In mixed-use neighbourhoods, why is is ink! uniquely suited to thrive? Two main reasons:
 chain-extensions, and native Rust integrations.
