@@ -23,7 +23,7 @@ specialization is the be-all-end-all for the future of blockchain is overblown.
 We seem to have forgotten that smart contracts will play a crucial role in this app-chain
 world.
 
-Their ease of development, deployment and flexibility creates developer velocity and
+Their ease of development, deployment, and flexibility creates developer velocity and
 economic value in a way that app-chains cannot achieve on their own.
 
 Smart contracts promote economic activity on app-chains in the same way restaurants and
@@ -45,9 +45,10 @@ This combination of specialization and flexibility will allow for more efficient
 [blockspace](https://www.rob.tech/blog/polkadot-blockspace-over-blockchains/) - the raw
 material produced by blockchains and consumed by decentralized applications.
 
-From the ink! side, we've historically referred to hybrid-chains using the concept of
-"smart contracts as second class citizens". The idea that smart contracts may exist on a
-blockchain whose _raison d'etre_ is not to just simply run smart contracts.
+From the [ink!](https://use.ink/) side, we've historically referred to hybrid chains
+using the concept of "smart contracts as second class citizens". The idea that smart
+contracts may exist on a blockchain whose _raison d'etre_ is not to just simply run smart
+contracts.
 
 ## Smart Contract Advantages
 
@@ -71,10 +72,10 @@ TODO: Something something blockchain aquisition
 
 ### Ease of Development
 
-To make this a slightly more fair comparison, we'll assume that you're using Substrate, a
-blockchain development framework, to build your app-chain. If you're writing your own
-blockchain from scratch you've got a whole bunch of other problems ahead of you - good
-luck!
+To make this a slightly more fair comparison, we'll assume that you're using
+[Substrate](https://substrate.io/), a blockchain development framework, to build your
+app-chain. If you're writing your own blockchain from scratch you've got a whole bunch of
+other problems ahead of you - good luck!
 
 Writing smart contracts, especially ink! ones, is relatively simple compared to building
 writing pallets (i.e blockchain logic legos) to build a Substrate runtime. The main
@@ -97,7 +98,7 @@ this wrong you open your chain up to denial-of-service (DoS) attacks!
 ### Scalable Deployments
 
 There are three things that make deploying smart contracts scalable:
-1. Permisionless deployments
+1. Permissionless deployments
 1. Small code sizes
 1. Default to a dormant state
 
@@ -106,7 +107,7 @@ nearly [eight million smart contracts](https://www.alchemy.com/blog/web3-develop
 deployed on it in just 2022!
 
 For (1), typically as long as you have enough funds to cover the cost of putting the code
-on-chain nobody can stop you from deploying code. 
+on-chain nobody can stop you from deploying code.
 
 For (2), smart contracts are typically quite small in size (on the order of kilobytes).
 With consumer hardware it is possible to store millions of smart contracts and not worry
@@ -124,7 +125,7 @@ smart contracts.
 
 As we mentioned in the last section, once a smart contract is deployed on-chain they can
 lie dormant as long as their underlying chain is still running. As a developer you don't
-need to contantly worry about whether or not your code will disappear.
+need to constantly worry about whether or not your code will disappear.
 
 When you've deployed your own app-chain, you do need to worry about this.
 
@@ -134,7 +135,7 @@ through the issuance of a token...which means you now have to worry about things
 token game theoretics, exchange listings, regulatory compliance, etc.
 
 This sounds like quite a bit of work, when all you really wanted to do was deploy an
-application and gets users playing with it, no?
+application and get users playing with it, no?
 
 ## Smart Contracts and Hybrid Chains
 
@@ -147,12 +148,11 @@ applications can talk to each other in the _same block_.
 We can contrast this with _asynchronous composability_, in which applications interact
 with each other across a _variable number of blocks_.
 
-Smart contracts are in a position to synchronously compose with the unique capabilies of
+Smart contracts are in a position to synchronously compose with the unique capabilities of
 their underlying app-chain as well as other smart contracts which exist on the same
 chain.
 
-
-Okay cool, so what can we do with this?
+_Okay cool, so what can we do with this?_
 
 For one, developers are able to leverage hybrid chains and synchronous composability to
 increase their development velocity.
@@ -186,7 +186,6 @@ off of each other to create increasing more sophisticated applications. Now imag
 could pull out all the common DeFi primitives into the core logic of the blockchain! This
 is what hybrid chains will enable.
 
-
 ### Mixed-Use Development
 
 We did tease an urban planning analogy at the beginning, so let's circle back to that.
@@ -218,7 +217,7 @@ The higher the density of businesses, the more economic value that can be create
 Even in mixed-use neighbourhoods we'll still run into times that we need to run errands
 elsewhere. The nice thing about deploying your contract on a Polkadot parachain is that
 you get access to all the other neighbourhoods in the paraverse out of the box thanks to
-XCM! Sure, running this errands wil take a bit more time and cost a bit more, but you can
+XCM! Sure, running this errands will take a bit more time and cost a bit more, but you can
 do it.
 
 ## ink! for Urban Planning
