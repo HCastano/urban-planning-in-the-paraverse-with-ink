@@ -261,3 +261,7 @@ Polkadot and Substrate repositories ink! will be able to use them directly. No n
 reimplement all this tricky code correctly!
 
 Our cross-chain errands will be no match for this level of integration!
+
+---
+
+_I want to give a shoutout to Rob H. for discussions leading to this post 💪_
