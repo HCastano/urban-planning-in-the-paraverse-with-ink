@@ -261,11 +261,3 @@ Polkadot and Substrate repositories ink! will be able to use them directly. No n
 reimplement all this tricky code correctly!
 
 Our cross-chain errands will be no match for this level of integration!
-
-## How do we go forward?
-- Is it too radical to introduce the idea of pure-ink! chains in this post?
-    - I feel like this could maybe be its own short post with a technical speicfication
-- Same with the whole story around "The Merge"
-- These two things could be their own blog post
-    - Maybe something along the lines of "ink! as the gateway to Polkadot"
-- ink! as an innovation engine
