@@ -197,7 +197,7 @@ neighbourhood.
 
 App-chains have the same problem. As soon as you want to do anything other than what the
 app-chain exposes you need to leave the app-chain (either via bridges, or XCM in the
-Paraverse).
+paraverse).
 
 This means extra overhead for running whatever errand you need to run. The more
 specialized your app-chain is, the more often you'll need to pay for this.
