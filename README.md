@@ -1,5 +1,9 @@
 # Urban Planning in the Paraverse with ink!
 
+_I've posted this on the
+[Polkadot Forum](https://forum.polkadot.network/t/urban-planning-in-the-paraverse-with-ink/2617),
+so head over there for discussions._
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Hybrid Chains](#hybrid-chains)
