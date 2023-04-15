@@ -29,13 +29,13 @@ economic value in a way that app-chains cannot achieve on their own.
 Smart contracts promote economic activity on app-chains in the same way restaurants and
 shops do in a mixed-used neighbourhood.
 
-Without smart contracts app-chains will turn into suburban nightmares.
+Without smart contracts, app-chains will turn into suburban nightmares.
 
 ## Hybrid Chains
 
-_Rob H. has [a good post](https://www.rob.tech/blog/hybrid-chains/) that delves deeper on
-the concept of concept of hybrid chains. You should go read that in it's entirety when
-you have a chance._
+_Rob Habermeier has [a good post](https://www.rob.tech/blog/hybrid-chains/) that delves
+deeper on the concept of concept of hybrid chains. You should go read that in it's
+entirety when you have a chance._
 
 A hybrid chain is one which is mostly specialized, but also retains some limited level of
 general compute abilities. This lets the chain optimize for a certain use case, but also
@@ -46,17 +46,19 @@ This combination of specialization and flexibility will allow for more efficient
 material produced by blockchains and consumed by decentralized applications.
 
 From the [ink!](https://use.ink/) side, we've historically referred to hybrid chains
-using the concept of "smart contracts as second class citizens". The idea that smart
-contracts may exist on a blockchain whose _raison d'etre_ is not to just simply run smart
-contracts.
+using the concept of
+["smart contracts as second class citizens"](https://use.ink/how-it-works/#use-case-2-smart-contracts-as-second-class-citizens).
+The idea that smart contracts may exist on a blockchain whose _raison d'etre_ is not to
+just simply run smart contracts.
 
 ## Smart Contract Advantages
 
-People often think that app-chains are the next evolution of smart contracts. However,
-this is far from the case.
+There is a misconception that app-chains are the next evolution of smart contracts - that
+app-chains will make contracts obsolete. However, this is far from the case.
 
 Smart contracts should instead be considered a standalone primitive for writing
-applications. They come with their own advantages and trade-offs.
+applications. They come with their own advantages and trade-offs that make them uniquely
+suitable for applications that app-chains cannot cover on their own.
 
 What are some of the reasons why we might want to use smart contracts instead of running
 our own blockchain?
@@ -68,8 +70,6 @@ Smart contracts are typically:
 
 Let's dig into each of these points a bit.
 
-TODO: Something something blockchain aquisition
-
 ### Ease of Development
 
 To make this a slightly more fair comparison, we'll assume that you're using
@@ -77,10 +77,9 @@ To make this a slightly more fair comparison, we'll assume that you're using
 app-chain. If you're writing your own blockchain from scratch you've got a whole bunch of
 other problems ahead of you - good luck!
 
-Writing smart contracts, especially ink! ones, is relatively simple compared to building
-writing pallets (i.e blockchain logic legos) to build a Substrate runtime. The main
-reason being that smart contracts trade off performance and flexibility for ease of
-development.
+Writing smart contracts, especially ink! ones, is relatively simple compared to writing
+pallets (i.e blockchain logic legos) to build a Substrate runtime. The main reason being
+that smart contracts trade off performance and flexibility for ease of development.
 
 With smart contracts, you aren't able to customize core blockchain components like the
 consensus engine or the transaction pool. However, by not being able to tune these
@@ -172,7 +171,6 @@ to play with the features sooner, and then once they were confident with the fea
 could translate that over into a runtime logic and _only then_ go through the whole song and
 dance of a runtime upgrade.
 
-
 We can also use hybrid chains and synchronous composability to improve the application
 density of a given blockchain. Developers are not only able to interact with the
 app-chain itself, but also with many different smart contracts in a fast and efficient
@@ -212,7 +210,6 @@ selling point (e.g a nice beachfront location) but also work together with other
 smart contracts (e.g a nice cafe by the water) to create economic value.
 
 The higher the density of businesses, the more economic value that can be created.
-
 
 Even in mixed-use neighbourhoods we'll still run into times that we need to run errands
 elsewhere. The nice thing about deploying your contract on a Polkadot parachain is that
@@ -265,13 +262,10 @@ reimplement all this tricky code correctly!
 
 Our cross-chain errands will be no match for this level of integration!
 
-## Conclusion
-
-TODO: Write
-
 ## How do we go forward?
 - Is it too radical to introduce the idea of pure-ink! chains in this post?
     - I feel like this could maybe be its own short post with a technical speicfication
 - Same with the whole story around "The Merge"
 - These two things could be their own blog post
     - Maybe something along the lines of "ink! as the gateway to Polkadot"
+- ink! as an innovation engine
