@@ -55,6 +55,10 @@ using the concept of
 The idea that smart contracts may exist on a blockchain whose _raison d'etre_ is not to
 just simply run smart contracts.
 
+In this context it makes sense to refer to those contracts as _hybrid contracts_:
+contracts that make use of app-chain specific primitives to enchance their own
+capabilities.
+
 ## Smart Contract Advantages
 
 There is a misconception that app-chains are the next evolution of smart contracts - that
